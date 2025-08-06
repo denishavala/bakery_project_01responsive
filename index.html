@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sweet Cake Bakery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="demo.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+  <div class="container-fluid justify-content-between">
+
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="bakreylogo.jpeg" alt="Logo" class="bakery-logo me-2">
+      <h4 class="mb-0 text-secondary">Sweet Cake</h4>
+    </a>
+
+    <!-- Center Navigation (for large screens) -->
+    <div class="navbar-center d-none d-lg-block text-secondary">
+      <ul class="navbar-nav flex-row gap-4 ">
+        <li class="nav-item"><a class="nav-link" href="demo1.html">Home</a></li>
+        <!-- <li class="nav-item dropdown"> -->
+          <a class="nav-link dropdown" href="../cart/product.php">
+            Product
+          </a>
+          <!-- <ul class="dropdown-menu" aria-labelledby="productDropdown">
+            <li><a class="dropdown-item" href="#">Cookie</a></li>
+            <li><a class="dropdown-item" href="#">Cake</a></li>
+            <li><a class="dropdown-item" href="#">Pastries</a></li>
+          </ul> -->
+        </li>
+        <li class="nav-item"><a class="nav-link" href="../desigingfile/blog.php">Blogs</a></li>
+        <li class="nav-item"><a class="nav-link" href="../desigingfile/contectus.php">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Right: Theme + Login + Hamburger -->
+    <div class="d-flex align-items-center gap-2">
+      <button id="themeToggle" class="btn btn-outline-dark d-none d-lg-block">🌙</button>
+      <a href="./login_modal.html" class="btn btn-secondary d-none d-lg-block">Login</a>
+
+      <!-- Hamburger for small screens -->
+      <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+        <i class="bi bi-list fs-2"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Offcanvas for Mobile Menu -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav flex-column gap-3">
+      <li class="nav-item">
+        <a class="nav-link" href="demo1.html">Home</a>
+      </li>
+      <!-- <li class="nav-item dropdown"> -->
+        <a class="nav-link dropdown" href="#" id="mobileProductDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          Product
+        </a>
+        <!-- <ul class="dropdown-menu" aria-labelledby="mobileProductDropdown">
+          <li><a class="dropdown-item" href="#">Cookie</a></li>
+          <li><a class="dropdown-item" href="#">Cake</a></li>
+          <li><a class="dropdown-item" href="#">Pastries</a></li>
+        </ul> -->
+      </li>
+      <li class="nav-item"><a class="nav-link" href="../desigingfile/blog.php">Blogs</a></li>
+      <li class="nav-item"><a class="nav-link" href="../desigingfile/contectus.php">Contact Us</a></li>
+      <li class="nav-item"><a href="./login_modal.html" class="btn btn-outline-primary mt-3">Login</a></li>
+    </ul>
+  </div>
+</div>
+
+  <!-- Hero Section -->
+  <div class="hero-img-section position-relative h-auto">
+  <!-- Desktop Image -->
+  <img src="front-view-delicious-cake-concept.jpg" 
+       alt="Bakery Banner" 
+       class="img-fluid d-none d-sm-block w-100">
+
+  <!-- Mobile Image -->
+  <img src="front-view-delicious-cake-concept.jpg" 
+       alt="Bakery Banner Mobile" 
+       class="img-fluid d-sm-block d-md-none w-100 h-auto">
+
+  <div class="hero-text  start-50">
+    <h2>Welcome to Sweet Cake Bakery!</h2>
+    <p>Explore our delicious treats below.</p>
+  </div>
+</div>
+  <section class="py-5 bg-white text-center section">
+  <h2 class="mb-4 ourtopproduct">OUR TOP PRODUCT</h2>
+  <div class="container">
+    <div class="row g-4">
+      
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="post1.jpg" class="card-img-top" alt="Snake Plant">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold">Snake Plant</h5>
+            <p class="card-text text-muted">Perfect for indoors, purifies air and easy to care for.</p>
+          </div>
+        </div>
+      </div>
+
+     <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="post2.jpg" class="card-img-top" alt="Snake Plant">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold">Snake Plant</h5>
+            <p class="card-text text-muted">Perfect for indoors, purifies air and easy to care for.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Plant Card 3 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="post3.jpg" class="card-img-top" alt="Bonsai Tree">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold">Bonsai Tree</h5>
+            <p class="card-text text-muted">Add peace and beauty to your home with this mini tree.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plant Card 4 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="cookie1.jpg" class="card-img-top" alt="Hanging Plant">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold">Hanging Plant</h5>
+            <p class="card-text text-muted">Ideal for balconies and adds a green touch to small spaces.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+ <div class="hero-img-section position-relative h-auto">
+  <!-- Desktop Image -->
+  <img src="top-view-delicious-muffins-with-nuts-copy-space.jpg" 
+       alt="Bakery Banner" 
+       class="img-fluid d-none d-sm-block w-100">
+
+  <!-- Mobile Image -->
+  <img src="top-view-delicious-muffins-with-nuts-copy-space.jpg" 
+       alt="Bakery Banner Mobile" 
+       class="img-fluid d-sm-block d-md-none w-100 h-auto">
+
+  <div class="hero-text contanet">
+    <h2>20% Off Your First Order</h2>
+    <button type="button" class="btn btn-lg btn-light">Learn More</button> 
+
+    <p></p>
+  </div>
+</div>
+
+<section class="py-5 text-center">
+  <div class="container">
+    <h4 class="fw-bold text-uppercase mb-2">Main Services We Provide</h4>
+    <hr class="mx-auto mb-3" style="width: 80px; border-top: 3px solid #eab676;">
+    <p class="text-muted mb-5">Our services are the best in town, we provide great quality baked products</p>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Service 1 -->
+      <div class="col-6 col-md-3">
+        <div class="service-item">
+          <div class="service-icon bg-orange">
+            <i class="bi bi-emoji-smile fs-2 text-white"></i>
+          </div>
+          <h6 class="mt-3 fw-bold text-uppercase">Top Chefs</h6>
+          <p class="text-muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="col-6 col-md-3">
+        <div class="service-item">
+          <div class="service-icon bg-orange">
+            <i class="bi bi-egg fs-2 text-white"></i>
+          </div>
+          <h6 class="mt-3 fw-bold text-uppercase">Fresh Ingredients</h6>
+          <p class="text-muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="col-6 col-md-3">
+        <div class="service-item">
+          <div class="service-icon bg-orange">
+            <i class="bi bi-flower2 fs-2 text-white"></i>
+          </div>
+          <h6 class="mt-3 fw-bold text-uppercase">Attractive Flavors</h6>
+          <p class="text-muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="col-6 col-md-3">
+        <div class="service-item">
+          <div class="service-icon bg-orange">
+            <i class="bi bi-tools fs-2 text-white"></i>
+          </div>
+          <h6 class="mt-3 fw-bold text-uppercase">Professional</h6>
+          <p class="text-muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Customer Testimonials -->
+<div class="container my-5">
+  <h2 class="text-center mb-5 fw-bold" style="color: #6c757d;">What Our Customers Say</h2>
+  <div class="row g-4 justify-content-center">
+
+    <!-- Testimonial Card 1 -->
+    <div class="col-md-4">
+      <div class="testimonial-card rounded-4 p-4 shadow-lg bg-light text-center position-relative h-100">
+        <img src="https://i.pravatar.cc/80?img=1" alt="Priya Patel" class="testimonial-img rounded-circle mb-3">
+        <h5 class="fw-semibold mb-1">Priya Patel</h5>
+        <div class="stars mb-2 text-warning">
+          ★★★★★
+        </div>
+        <p class="text-muted">"The chocolate cake was rich and heavenly. Definitely ordering again!"</p>
+      </div>
+    </div>
+
+    <!-- Testimonial Card 2 -->
+    <div class="col-md-4">
+      <div class="testimonial-card rounded-4 p-4 shadow-lg bg-light text-center position-relative h-100">
+        <img src="https://i.pravatar.cc/80?img=2" alt="Aman Shah" class="testimonial-img rounded-circle mb-3">
+        <h5 class="fw-semibold mb-1">Aman Shah</h5>
+        <div class="stars mb-2 text-warning">
+          ★★★★☆
+        </div>
+        <p class="text-muted">"I loved how fresh and soft the cupcakes were. A must-try bakery!"</p>
+      </div>
+    </div>
+
+    <!-- Testimonial Card 3 -->
+    <div class="col-md-4">
+      <div class="testimonial-card rounded-4 p-4 shadow-lg bg-light text-center position-relative h-100">
+        <img src="https://i.pravatar.cc/80?img=3" alt="Kavya Desai" class="testimonial-img rounded-circle mb-3">
+        <h5 class="fw-semibold mb-1">Kavya Desai</h5>
+        <div class="stars mb-2 text-warning">
+          ★★★★★
+        </div>
+        <p class="text-muted">"Prompt service, great taste, and beautiful packaging!"</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Achievements Counter -->
+<div class="container text-center my-5">
+  <div class="row g-4">
+    <div class="col-md-4">
+      <h1 class="display-5">10K+</h1>
+      <p>Cakes Sold</p>
+    </div>
+    <div class="col-md-4">
+      <h1 class="display-5">8K+</h1>
+      <p>Happy Customers</p>
+    </div>
+    <div class="col-md-4">
+      <h1 class="display-5">5+</h1>
+      <p>Years in Business</p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="mt-5 py-4 bg-light text-dark dark-footer">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <!-- Brand -->
+      <div class="col-md-3 mb-4">
+        <h5>Sweet Cake Bakery</h5>
+        <p>Delicious treats for every occasion.</p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-3 mb-4">
+        <h6>Contact Us</h6>
+        <p>Email: support@sweetcake.com</p>
+        <p>Phone: +91 12345 67890</p>
+      </div>
+
+      <!-- Links -->
+      <div class="col-md-3 mb-4">
+        <h6>Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-decoration-none text-dark">Home</a></li>
+          <li><a href="product.html" class="text-decoration-none text-dark">Products</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Blogs</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div class="col-md-3 mb-4">
+        <h6>Follow Us</h6>
+        <a href="#" class="me-2 text-dark"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="me-2 text-dark"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="me-2 text-dark"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-dark"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      <small>© 2025 Sweet Cake Bakery. All rights reserved.</small>
+    </div>
+  </div>
+</footer>
+<!-- Scroll to Top Button -->
+<button onclick="scrollToTop()" id="scrollBtn" title="Go to top">↑</button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Theme Toggle Script -->
+  <script>
+    window.onload = function () {
+      const theme = localStorage.getItem("theme");
+      const toggleBtn = document.getElementById("themeToggle");
+
+      if (theme === "dark") {
+        document.body.classList.add("dark-mode");
+        toggleBtn.textContent = "☀️";
+      }
+    };
+
+    function toggleTheme() {
+      const body = document.body;
+      const toggleBtn = document.getElementById("themeToggle");
+      body.classList.toggle("dark-mode");
+
+      if (body.classList.contains("dark-mode")) {
+        toggleBtn.textContent = "☀️";
+        localStorage.setItem("theme", "dark");
+      } else {
+        toggleBtn.textContent = "🌙";
+        localStorage.setItem("theme", "light");
+      }
+    }
+  // Show button when user scrolls down 100px
+  window.onscroll = function() {
+    const btn = document.getElementById("scrollBtn");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+  </script>
+  <?php if (isset($_GET['register']) && $_GET['register'] == 'success'): ?>
+  <div class="position-fixed top-0 end-0 p-3" style="z-index: 9999;">
+    <div id="registerToast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          Registered successfully!
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Show toast for 3 seconds
+    const toastEl = document.getElementById('registerToast');
+    const toast = new bootstrap.Toast(toastEl, { delay: 3000 });
+    toast.show();
+
+    // Remove query string from URL after showing toast
+    setTimeout(() => {
+      const url = new URL(window.location);
+      url.searchParams.delete('register');
+      window.history.replaceState({}, document.title, url);
+    }, 1000); // Remove param after 1 second (before toast disappears)
+  </script>
+<?php endif; ?>
+</body>
+</html>
